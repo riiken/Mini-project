@@ -1,0 +1,42 @@
+
+<div class="card" *ngFor="let obj of payArr">
+    <div class="card-header center">
+       <b style="font-size:20px ;">Payment details</b> 
+    </div>
+    <div class="card-body" >
+            <div class="row" >
+                <div class="col-md-8"  >
+                    <div class="form-group row">
+                        <div class="col-sm-3 col-form-label">Card-no.</div>
+                        <div class="col-sm-9 form-control">{{obj.card_no}}</div>
+                    </div>
+                    <div class="form-group row">
+                        <div class="col-sm-3 col-form-label">Name</div>
+                        <div class="col-sm-9 form-control">{{obj.name}}</div>
+                    </div>
+                    <div class="form-group row">
+                        <div class="col-sm-3 col-form-label">member</div>
+                        <div class="col-sm-9 form-control">{{obj.email_id}}</div>
+                    </div>
+
+
+
+                    <!-- <div class="form-group row">
+                        <div class="col-sm-3 col-form-label">Amount</div>
+                        <div class="col-sm-9 form-control">{{obj.amount}}</div>
+                    </div> -->
+                    <!-- <div class="form-group row">
+                        <div class="col-sm-3 col-form-label">Type</div>
+                        <div class="col-sm-9 form-control">{{obj.type}}</div>
+                    </div> -->
+                   
+                </div>
+                <!-- user_img -->
+                <!-- <div class="col-md-4">
+                    <div class="image-contain">
+                        <img srcset="{{user_img}}" class="mx-auto d-block" src="../../../assets/person_add_alt.svg" alt="upload image">
+                    </div>
+                </div> -->
+            </div>
+    </div>
+</div>

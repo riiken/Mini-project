@@ -1,0 +1,40 @@
+.card{
+    background-color: #F0B27A;
+    height: 340px;
+    width:600px;
+    position: fixed;
+    top: 35%;
+    left: 30%;
+    border-color: cornsilk;
+    border-style: solid;
+    font-weight: bold;
+}
+
+
+
+.heading{
+    text-align: center;
+    color: black;
+    font-weight:100;
+    line-height:4rem;
+    font-size:80px;
+    position: fixed;
+    top: 25%;
+    left: 25%;
+    
+}
+
+.container{
+    text-align: center;
+}
+
+.btn{
+    cursor:pointer;
+    background-color:cyan;
+}
+.new{
+    text-align: center;
+    color: black;
+    width: 180px;
+    height: 30px;
+}

@@ -1,0 +1,44 @@
+
+
+ 
+ 
+ 
+ .head{
+   
+    background-color: #F31C5E;
+    display: inline-block;
+    width: 100%;
+    font-size: 125%;
+    position: fixed;
+
+   
+}
+
+
+
+.btn{
+    color: white;
+    list-style-type: none;
+    text-decoration: none;
+    float: right;
+    padding: 1% 1%;
+    outline: none;
+    cursor: pointer;
+    font-weight: bold;
+    
+    
+    
+}
+
+
+
+.first{
+    float: left;
+    color: white;
+    list-style-type: none;
+    font-size: 30px;
+    text-decoration: none;
+    outline: none;
+    font-weight: bold;
+}
+

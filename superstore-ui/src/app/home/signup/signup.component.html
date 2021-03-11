@@ -1,0 +1,41 @@
+
+       <div class="card">
+           <form>
+           <div class="container">
+               <h2>SIGN-UP</h2>
+               <div >
+                   <label for="admin">NAME:</label>
+                   <input type="text" name="name" [(ngModel)]="name" id="admin" autocomplete="off">
+               </div>
+               <br>
+               <div>
+                   <label for="pass">EMAIL:</label>
+                   <input type="text" name="email"  [(ngModel)]="email"  id="pass" autocomplete="off">
+               </div>
+               <br>
+               <div>
+                <label for="pass">PASSW:</label>
+                <input type="text"  name="passw" [(ngModel)]="passw"  id="pass" autocomplete="off">
+               </div>
+               <br>
+               <div>
+                <!-- <label for="pass">TYPE:</label>
+                <input type="text" name="type" [(ngModel)]="type"  id="pass" autocomplete="off"> -->
+                <label for="cars">CITY:</label>
+                <input type="text"  name="type" [(ngModel)]="type"  id="cars" autocomplete="off">
+                <!-- <select id="cars"  name="type" [(ngModel)]="type"  id="pass" class="new" >
+                    <option value="Automobile">Automobile</option>
+                    <option value="Electronics">Electronics</option>
+                    <option value="Colddrinks">Colddrinks</option>
+                    
+                </select> -->
+                </div>
+               <br>
+               <div>
+               <div>
+                   <button (click)="signUp()" class="btn">SIGN-UP</button>
+               </div>
+           </div>
+       </div>
+    </form>
+    </div>

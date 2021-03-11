@@ -1,0 +1,26 @@
+<div>
+
+    <div>
+       <div class="card">
+           <div class="container">
+               <h2>SIGN-IN</h2>
+               <form #signInform="ngForm"  (ngSubmit)="signIn(signInform)">
+               <div>
+                   <label for="admin">EMAIL:</label>
+                   <input type="text" ngModel #email="ngModel" name="email" id="admin" autocomplete="on">
+               </div>
+               <br>
+               <div>
+                   <label for="pass">PASSW:</label>
+                   <input type="password"  ngModel  #password="ngModel" name="password" id="pass">
+               </div>
+               <br>
+               <div>
+                   <button class="btn" type="submit">LOGIN</button>
+               </div>
+               <div>{{passwordError}}</div>
+            </form>
+           </div>
+       </div>
+    </div>
+</div>

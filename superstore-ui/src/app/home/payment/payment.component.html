@@ -1,0 +1,42 @@
+<div>
+
+    <div>
+       <div class="card">
+           <div class="container">
+               <h2>PAY NOW</h2>
+               <br>
+               <form #payInform="ngForm"  (ngSubmit)="pay(payInform)">
+               <div>
+                   <label for="admin">CARD-NO.:</label>
+                   <input type="number" ngModel #card_no="ngModel" name="card_no" id="admin" autocomplete="on" maxlength="16" pattern="\{16}">
+               </div>
+               <br>
+               
+               <div>
+                   <label for="pass">NAME:</label>
+                   <input type="text"  ngModel  #name="ngModel" name="name" id="pass" autocomplete="off">
+               </div>
+               <br>
+               
+               <div>
+                   <label for="pass">CVV:</label>
+                   <input type="number"  ngModel  #cvv="ngModel" name="cvv" id="pass">
+               </div>
+               <br>
+
+               <div>
+                <label for="pass"> MEMBER-EMAIL:</label>
+                <input type="text"  ngModel  #email_id="ngModel" name="email_id" id="pass">
+            </div>
+            <br>
+
+
+               <div>
+                   <button class="btn" type="submit" (click)="farewell()">PAY</button>
+               </div>
+               <!-- <div>{{passwordError}}</div> -->
+            </form>
+           </div>
+       </div>
+    </div>
+</div>

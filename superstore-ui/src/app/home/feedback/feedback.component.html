@@ -1,0 +1,62 @@
+
+<div>
+    <div class="head">
+    <div>
+        THANK YOU!
+    </div>
+   
+</div>
+<div class="h">
+    <h2 style="font-size: 25px;">PLEASE PROVIDE YOUR FEEDBACK HERE</h2>
+</div>
+
+    <div class="card">
+       
+        <div class="container">
+            <br>
+            <form #feedbckform="ngForm" (ngSubmit)="feed(feedbckform)">
+                <div>
+                    <input type="text"  name="email" ngModel #email="ngModel" placeholder="enter your email" >
+                </div>
+            <div>
+                <label for="fedd">(a) How was the service in our store</label>
+                <br>
+                <select name="service_provided" id="fedd" ngModel #service_provided="ngModel">
+                    <option value="poor">poor</option>
+                    <option value="good">good</option>
+                    <option value="best">best</option>
+                </select>
+                
+            </div>
+            <br>
+
+            <div>
+                <label for="fedd">(b) How was the product quality</label>
+                <br>
+                <select name="product_quality" id="fedd" ngModel #product_quality="ngModel">
+                    <option value="poor">poor</option>
+                    <option value="good">good</option>
+                    <option value="best">best</option>
+                </select>
+            </div>
+            <br>
+
+            <div>
+                <label for="fedd">(c) How was management in our store</label>
+                <br>
+                <select name="management" id="fedd" ngModel #management="ngModel">
+                    <option value="poor">poor</option>
+                    <option value="good">good</option>
+                    <option value="best">best</option>
+                </select>
+            </div>
+            <br>
+            <br>
+
+            <div>
+                <button class="btn">submit</button>
+            </div>
+        </form>
+        </div>
+    </div>
+</div>

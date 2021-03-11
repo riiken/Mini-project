@@ -1,0 +1,23 @@
+
+    
+   
+ 
+<div>
+    <div class="head">
+        <ul>
+           
+          
+           <li class="btn" routerLink="signin" *ngIf="isSignIn">LOGOUT</li>
+           <li class="btn" routerLink="addorder" *ngIf="isSignIn">NEW ORDER </li>
+           <li class="btn" routerLink="signup" *ngIf="!isSignIn">SIGNUP</li>
+           <li class="btn" routerLink="signin" *ngIf="!isSignIn"> SIGNIN</li>
+           <li class="btn" routerLink="adddist" *ngIf="isSignIn"> SALES REPORT</li>
+           <!-- <li class="btn" routerLink="member" *ngIf="isSignIn"> userdetails</li> -->
+           <!-- <li class="btn" routerLink="feedback" *ngIf="isSignIn"> FEEDBACK</li> -->
+           <li class="btn" routerLink="home" *ngIf="isSignIn">HOME</li>
+           <li class="first" >WELCOME TO STORE</li>
+          
+           
+        </ul>
+    </div>
+</div>

@@ -1,0 +1,28 @@
+<div class="details">
+    <h1>SALES DETAILS</h1>
+</div>
+<div style="display: block; overflow: auto;">
+    <table style="border: 2px solid red; width: 80%; height: 70%;  position: relative; margin-left: 17%; margin-top: 15%; " >
+        <thead style="background-color: palevioletred;">
+            <tr style="column-gap: 16%; ">
+                <td >Client-id</td>
+                <td >Email</td>
+                <td >Region</td>
+                <td >Month</td>
+                <td >Sales-cost</td>
+            </tr>
+        </thead>
+        <tbody *ngFor="let obj of readSalesArr" style="background-color: peru;">
+            <tr style="column-gap: 16%;">
+                <td >{{obj.client_id}}</td>
+                <td >{{obj.cl_email}}</td>
+                <td >{{obj.region}}</td>
+                <td >{{obj.month}}</td>
+                <td >{{obj.sales_cost}}</td>
+
+            </tr>
+           
+
+        </tbody>
+    </table>
+</div>

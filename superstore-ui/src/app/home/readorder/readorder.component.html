@@ -1,0 +1,34 @@
+<div class="order">
+    <h1>ORDER DETAILS</h1>
+</div>
+    <div class="main">
+    <table class="table table-bordered" >
+        <thead style="background-color: teal;">
+            <tr style="column-gap: 16%; ">
+                <th>ORDER-ID</th>
+                <th>DATE</th>
+                <th>PRODUCTS</th>
+                <!-- <th>like</th> -->
+                <!-- <th>AMOUNT</th> -->
+                <!-- <th>PAYMENT</th>  -->
+
+            </tr>
+        </thead>
+ 
+        <tbody *ngFor="let obj of readOrderArr" style="background-color: wheat;">
+            
+            <tr style="column-gap: 16%; ">
+                <td>{{obj.order_id}}</td>
+                <td>{{obj.date}}</td>
+                <td>{{obj.type}} ,{{obj.type_2}},{{obj.type_3}}</td>
+                <!-- <td>{{obj.like}}</td> -->
+                <!-- <td>{{obj.amount}}</td> -->
+
+                <!-- <td>{{obj.payment}}</td> -->
+
+             </tr>
+            
+        </tbody>
+    </table>
+
+</div>

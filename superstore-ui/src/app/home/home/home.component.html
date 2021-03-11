@@ -1,0 +1,25 @@
+ 
+<div *ngIf = "isSignIn">
+<app-readorder></app-readorder>
+
+</div> 
+<div *ngIf = "isSignIn" class="btn">
+    <button (click)="members()">Members</button>
+</div>
+
+<div *ngIf = "isSignIn" class="payment">
+    <button (click)="pay()">Payment</button>
+</div>
+ 
+<!-- <div *ngIf = "true" >
+    <app-readorder></app-readorder>
+</div>  -->
+<!-- <div *ngIf ="!isSignIn" class="WE">
+    WELCOME TO STORE
+</div> -->
+
+
+          
+<!-- <li routerLink="signin" class="btn " *ngIf = "isSignIn">logout</li> -->
+    
+ 

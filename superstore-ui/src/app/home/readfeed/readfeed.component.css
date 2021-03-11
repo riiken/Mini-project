@@ -1,0 +1,9 @@
+.details{
+    text-align: center;
+    font-weight: bold;
+    font-size: 15px;
+    top: 15%;
+    position: fixed;
+    left: 40%;
+    color: cyan;
+}

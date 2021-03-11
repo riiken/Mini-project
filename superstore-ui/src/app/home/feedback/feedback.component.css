@@ -1,0 +1,63 @@
+.card{
+    background-color: skyblue;
+    height: 390px;
+    width:600px;
+    position: fixed;
+    top: 35%;
+    left: 30%;
+    border-color: cornsilk;
+    border-style: solid;
+    font-weight: bold;
+}
+
+
+
+.heading{
+    text-align: center;
+    color: black;
+    font-weight:100;
+    line-height:4rem;
+    font-size:80px;
+    position: fixed;
+    top: 25%;
+    left: 25%;
+    
+}
+
+.container{
+    text-align: center;
+    color: black;
+}
+
+.btn{
+    cursor:pointer;
+    background-color: chartreuse;
+}
+.new{
+    text-align: center;
+    color: black;
+    width: 180px;
+    height: 30px;
+}
+
+.head{
+    text-align: center;
+    color: lightpink;
+    font-weight:bold;
+    line-height:4rem;
+    font-size:80px;
+    position: fixed;
+    top: 10%;
+    left: 34%;
+    
+}
+.h{
+    text-align: center;
+    color: dimgray;
+    font-weight:bold;
+   
+    font-size:10px;
+    position: fixed;
+    top: 29%;
+    left: 30%;
+}

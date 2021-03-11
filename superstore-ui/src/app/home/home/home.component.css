@@ -1,0 +1,22 @@
+/* /* .welcome{
+   height: 400px;
+
+} */
+
+/* . */
+.btn{
+  background-color: darksalmon;
+   top: 32%;
+   left:4%;
+   transform: translate(-50%,-50%);
+   position: fixed;
+} 
+
+.payment{
+   background-color: darksalmon;
+   top: 40%;
+   left:4%;
+   transform: translate(-50%,-50%);
+   position: fixed;
+}
+

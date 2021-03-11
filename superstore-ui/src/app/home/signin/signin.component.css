@@ -1,0 +1,22 @@
+.card{
+    background-color: #F0B27A;
+    height: 240px;
+    width:580px;
+    position: fixed;
+    top: 45%;
+    left: 30%;
+    border-color: cornsilk;
+    border-style: solid;
+    font-weight: bold;
+}
+
+
+.container{
+    text-align: center;
+}
+
+.btn{
+    cursor:pointer;
+    background-color: cyan;
+}
+

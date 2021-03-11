@@ -1,0 +1,72 @@
+    <div >
+        <button (click)="info()" class="info">SALES INFO</button>
+    </div>
+       <div class="card">
+           <div class="container">
+               <h2>NEW SALE ENTRY</h2>
+               <br>
+            <form   #salesform="ngForm"  (ngSubmit)="sales(salesform)">
+               <!-- <div>
+                   <label for="admin">CLIENT_ID:</label>
+                   <input type="text" name="client_id"  ngModel  #client_id="ngModel" id="admin">
+               </div> -->
+               <br>
+               <div>
+                   <label for="pass">EMAIL:</label>
+                   
+                   <input type="text" name="cl_email"  ngModel  #email="ngModel" id="pass" >
+               </div>
+               <br>
+               <div>
+                <!-- <label for="pass">REGION:</label>
+                <input type="text" name="region"  ngModel  #region="ngModel" id="pass" autocomplete="off"> -->
+                <label for="region">REGION:</label>
+                <select id="region" name="region" ngModel  #region="ngModel" class="new" >
+                    <option value="CHENNAI">CHENNAI</option>
+                    <option value="BANGLORE">BANGLORE</option>
+                    <option value="RANCHI">RANCHI</option>
+                </select>
+               </div>
+
+               <div>
+                <!-- <label for="pass">MONTH:</label>
+                <input type="text" name="month"  ngModel  #month="ngModel" id="pass"> -->
+                <label for="cars">MONTH:</label>
+                <select id="cars" name="month" ngModel  #month="ngModel" class="new" >
+                    <option value="JANUARY">JAN</option>
+                    <option value="FEBRUARY">FEB</option>
+                    <option value="MARCH">MARCH</option>
+                    <option value="APRIL">APRIL</option>
+                    <option value="MAY">MAY</option>
+                    <option value="JUNE">JUNE</option>
+                    <option value="JULY">JULY</option>
+                    <option value="AUGUST">AUG</option>
+                    <option value="SEPTEMBER">SEPT</option>
+                    <option value="OCTOBER">OCT</option>
+                    <option value="NOVEMBER">NOV</option>
+                    <option value="DECEMBER">DEC</option>
+                    
+                </select>
+            </div>
+            <br>
+            <div>
+                <label for="pass">COST:</label>
+                <input type="text" name="sales_cost"  ngModel  #sales_cost="ngModel" id="pass" autocomplete="off">
+            </div>
+            <br>
+
+            <!-- <div>
+                <label for="pass">TYPE:</label>
+                <input type="text" name="type"  ngModel  #type="ngModel" id="pass">
+            </div>
+            <br> -->
+               
+               <div>
+                   <button class="btn" type="submit">DONE</button>
+               </div>
+
+
+            </form>
+           
+       </div>
+    </div> 

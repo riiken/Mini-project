@@ -1,0 +1,127 @@
+    <div>
+        <button (click)="details()"  class="orderdetails">Order details</button>
+    </div>
+       <div class="card">
+           <div class="container">
+               <h2>ADD YOUR ORDERS HERE</h2>
+               <br>
+            <form  #orderform="ngForm"  (ngSubmit)="submitOrder(orderform)">
+               <!-- <div>
+                   <label for="admin">ORDER_ID:</label>
+                   <input type="text" name="orderid"  ngModel  #orderid="ngModel" id="admin" autocomplete="off">
+               </div>
+               <br> -->
+               <div>
+                   <label for="pass">DATE:</label>
+                   <input type="date" name="date" ngModel  #date="ngModel" id="pass" autocomplete="off">
+               </div>
+               <br>
+               <div >
+         
+                <label for="quantity">Quantity:</label>
+                <input type="text"  [(ngModel)]="quantity" name="quantity">
+               
+                &nbsp;&nbsp;&nbsp;
+               
+                <label for="cars">TYPE:</label>
+                <select id="cars" name="type_2" ngModel  #type_2="ngModel" class="new" (change)="gettype($event)"  >
+                    <option value="Cover"> Cover</option>
+                                <option value="Tempered">Tempered</option>
+                                <option value="Screen">Screen</option>
+                                <option value="Earphones">Earphones</option>
+                                <option value="Charger">Charger</option>
+                                <option value="Buds">Buds</option>
+                </select>
+
+                    &nbsp;&nbsp;&nbsp;
+               
+                   
+                        <label for="pass">AMOUNT:</label>
+                        <input type="text" disabled [(ngModel)]="price" name="price">
+
+               </div>
+                   
+    
+                 <div >
+                            <label for="quantity">Quantity:</label>
+                            <input type="text"  [(ngModel)]="quan" name="quan">
+         
+            
+                            &nbsp;&nbsp;&nbsp;
+                            
+                               
+                            <label for="cars">TYPE:</label>
+                            <select id="cars" name="type" ngModel  #type="ngModel" class="new" (change)="getmore($event)"  >
+                                <option value="Cover"> Cover</option>
+                                <option value="Tempered">Tempered</option>
+                                <option value="Screen">Screen</option>
+                                <option value="Earphones">Earphones</option>
+                                <option value="Charger">Charger</option>
+                                <option value="Buds">Buds</option>
+                                
+                            </select>
+                               
+                            &nbsp;&nbsp;&nbsp;
+                               
+                                    <label for="pass">AMOUNT:</label>
+                                    <input type="text" disabled [(ngModel)]="amount" name="amount">
+                        </div>
+                        <div >
+                            
+                            <label for="quantity">Quantity:</label>
+                            <input type="text"  [(ngModel)]="qu" name="qu">
+                       
+         
+                           
+            
+                            &nbsp;&nbsp;&nbsp;
+                            
+                            <label for="cars">TYPE:</label>
+                            <select id="cars" name="type_3" ngModel  #type_3="ngModel" class="new" (change)="getonemore($event)"  >
+                                <option value="Cover"> Cover</option>
+                                <option value="Tempered">Tempered</option>
+                                <option value="Screen">Screen</option>
+                                <option value="Earphones">Earphones</option>
+                                <option value="Charger">Charger</option>
+                                <option value="Buds">Buds</option>
+                                
+                                
+                           </select>
+                                &nbsp;&nbsp;&nbsp;
+                                    <label for="pass">AMOUNT:</label>
+                                    <input type="text" disabled [(ngModel)]="amt" name="amt">
+                        </div> 
+                        <br>    
+                        
+                        
+                        <div>
+                            <label for="pass">total payble</label>
+                            <input type="text" disabled [(ngModel)]="total" name="total">
+                        </div>
+               
+                 
+               
+            
+               
+               <!-- <div>
+                <button class="btn" (click)="payment()">amt</button>
+            </div> -->
+               
+                 
+               <!-- <div>
+                <label for="pass">AMOUNT:</label>
+                <input type="number"  ngModel  #amount="ngModel" name="amount" id="pass">
+            </div> -->
+            
+           
+               
+               <div>
+                   <button class="btn" >pay</button>
+               </div>
+
+               <!-- <div *ngIf ="orderError" >{{orderError}}</div> -->
+              
+        </form>
+       </div>
+    </div>
+    

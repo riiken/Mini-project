@@ -1,0 +1,28 @@
+<div class="details">
+    <h1>USER FEEDBACKS</h1>
+</div>
+<div style="display: block; overflow: auto;">
+    <table style="border: 2px solid red; width: 80%; height: 70%;  position: relative; margin-left: 17%; margin-top: 15%; " >
+        <thead style="background-color: palevioletred;">
+            <tr style="column-gap: 16%; ">
+                
+                <td >email</td>
+                <td >How was the service in our store</td>
+                <td >How was the product quality</td>
+                <td >How was management in our store</td>
+            </tr>
+        </thead>
+        <tbody *ngFor="let obj of  readFeedArr" style="background-color: peru;">
+            <tr style="column-gap: 16%;">
+                
+                <td >{{obj.email}}</td>
+                <td >{{obj.service_provided}}</td>
+                <td >{{obj.product_quality}}</td>
+                <td >{{obj.management}}</td>
+
+            </tr>
+           
+
+        </tbody>
+    </table>
+</div>
